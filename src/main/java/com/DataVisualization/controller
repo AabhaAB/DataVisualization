@@ -1,0 +1,50 @@
+package com.DataVisualization.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+import com.DataVisualization.entity.Data;
+import com.DataVisualization.service.DataService;
+
+@RestController
+@RequestMapping("/data")
+@CrossOrigin(origins = "*")
+public class DataController {
+
+	@Autowired
+	private DataService dataService;
+
+	@GetMapping
+	public ResponseEntity<List<Data>> getAllData() {
+		List<Data> dataList = dataService.getAllData();
+		return new ResponseEntity<>(dataList, HttpStatus.OK);
+	}
+
+	@GetMapping("/{endYear}")
+	public ResponseEntity<Data> getDataByEndYear(@PathVariable int endYear) {
+		Data data = dataService.getDataByEndYear(endYear);
+		return new ResponseEntity<>(data, HttpStatus.OK);
+	}
+
+	@PostMapping
+	public ResponseEntity<Data> addData(@RequestBody Data data) {
+		Data newData = dataService.addData(data);
+		return new ResponseEntity<>(newData, HttpStatus.CREATED);
+	}
+
+	@PutMapping("/{endYear}")
+	public ResponseEntity<Data> updateData(@PathVariable int endYear, @RequestBody Data data) {
+		Data updatedData = dataService.updateData(endYear, data);
+		return new ResponseEntity<>(updatedData, HttpStatus.OK);
+	}
+
+	@DeleteMapping("/{endYear}")
+	public ResponseEntity<Void> deleteData(@PathVariable int endYear) {
+		dataService.deleteData(endYear);
+		return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+	}
+}
