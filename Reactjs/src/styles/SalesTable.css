@@ -1,0 +1,21 @@
+.sales-table {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow-y: auto;
+}
+
+/* Optional: Add some styling to the table */
+.sales-table table {
+width: 100%;
+border-collapse: collapse;
+}
+
+.sales-table th,
+.sales-table td {
+padding: 8px;
+border: 1px solid #ccc;
+}
+
+.sales-table th {
+background-color: #f2f2f2;
+}
+  

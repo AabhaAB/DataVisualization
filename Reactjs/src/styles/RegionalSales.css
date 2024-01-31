@@ -1,0 +1,19 @@
+.regional-sales {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.regional-sales h3 { 
+    text-align: center;
+}
+
+.regional-sales .chart-container {
+    position: relative;
+}
+
+.regional-sales .chart-container canvas {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
