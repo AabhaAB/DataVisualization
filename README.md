@@ -4,7 +4,7 @@ Welcome to the Data Visualization Dashboard project! This project is designed to
 
 ## Overview
 
-The Data Visualization Dashboard is a web-based application that allows users to interact with and analyze data in real-time. The integration of Java Spring Boot on the backend ensures robust and secure data handling, while React.js provides a responsive and intuitive user interface.
+The Data Visualization Dashboard is a web-based application that allows users to interact with and analyze data in real time. The integration of Java Spring Boot on the backend ensures robust and secure data handling, while React.js provides a responsive and intuitive user interface.
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@ The Data Visualization Dashboard is a web-based application that allows users to
 
 Follow these steps to set up the project locally:
 
-1. **Clone the Repository:**
+1. **Clone the Repository**
 2. **Backend Setup:**
 Install Java Spring Boot dependencies and run the backend server.
 3. **Frontend Setup:**
@@ -29,10 +29,10 @@ Open your browser and visit http://localhost:8072 to explore the dashboard.
 
 ## Features
 
-**Dynamic Data Visualization:** Interactive charts and graphs for effective data exploration.
-**Real-time Updates:** Stay updated with the latest data changes as they happen.
-**User-friendly Interface:** Intuitive design for a seamless user experience.
-**Secure Data Handling:** Ensure data accuracy and security with comprehensive testing.
+- **Dynamic Data Visualization:** Interactive charts and graphs for effective data exploration.
+- **Real-time Updates:** Stay updated with the latest data changes as they happen.
+- **User-friendly Interface:** Intuitive design for a seamless user experience.
+- **Secure Data Handling:** Ensure data accuracy and security with comprehensive testing.
 
 ## Testing
 
@@ -43,6 +43,6 @@ We welcome contributions! If you find any issues or have suggestions for improve
 
 ## Acknowledgments
 
-**Java Spring Boot:**
-**React.js:**
-**MySQL:**
+- **Java Spring Boot**
+- **React.js**
+- **MySQL**
